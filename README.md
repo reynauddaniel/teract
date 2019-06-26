@@ -14,7 +14,7 @@ Symfony 4.3.1 project to handle interim and their contracts
   * startDate
   * endDate
   * status
-* Monitoring
+* Assignments
   * interim
   * contract
   * rating
