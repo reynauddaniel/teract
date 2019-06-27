@@ -111,6 +111,11 @@ class Contract
         return $this;
     }
 
+	public function getStatus()
+	{
+		return $this->status;
+	}
+
     /**
      * @return Collection|Assignment[]
      */
