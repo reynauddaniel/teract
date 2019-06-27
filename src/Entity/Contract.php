@@ -16,17 +16,17 @@ class Contract
 	const STATUS_DONE = 'done';
 
 	protected static $all_status = [
-                        		self::STATUS_WAITING,
-                        		self::STATUS_IN_PROGRESS,
-                        		self::STATUS_DONE,
-                        	];
+        self::STATUS_WAITING,
+        self::STATUS_IN_PROGRESS,
+        self::STATUS_DONE,
+    ];
 
     /**
      * @ORM\Id()
      * @ORM\GeneratedValue()
      * @ORM\Column(type="integer")
      */
-    private $contractId;
+    private $id;
 
     /**
      * @ORM\ManyToOne(targetEntity="App\Entity\Interim", inversedBy="contracts")
@@ -59,9 +59,9 @@ class Contract
         $this->assignments = new ArrayCollection();
     }
 
-    public function getContractId(): ?int
+    public function getId(): ?int
     {
-        return $this->contractId;
+        return $this->id;
     }
 
     public function getInterimId(): ?Interim

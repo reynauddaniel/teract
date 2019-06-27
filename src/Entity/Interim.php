@@ -16,7 +16,7 @@ class Interim
      * @ORM\GeneratedValue()
      * @ORM\Column(type="integer")
      */
-    private $interimId;
+    private $id;
 
     /**
      * @ORM\Column(type="string", length=50)
@@ -59,9 +59,9 @@ class Interim
         $this->assignments = new ArrayCollection();
     }
 
-    public function getInterimId(): ?int
+    public function getId(): ?int
     {
-        return $this->interimId;
+        return $this->id;
     }
 
     public function getName(): ?string

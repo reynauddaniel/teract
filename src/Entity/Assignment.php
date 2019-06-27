@@ -16,7 +16,7 @@ class Assignment
      * @ORM\GeneratedValue()
      * @ORM\Column(type="integer")
      */
-    private $assignmentId;
+    private $id;
 
     /**
      * @ORM\ManyToOne(targetEntity="App\Entity\Interim", inversedBy="assignments")
@@ -46,7 +46,7 @@ class Assignment
 
     public function getAssignmentId(): ?int
     {
-        return $this->assignmentId;
+        return $this->id;
     }
 
     public function getInterimId(): ?Interim
