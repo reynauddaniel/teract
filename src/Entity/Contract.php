@@ -11,11 +11,11 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Contract
 {
-	const STATUS_WAITING = 'waiting';
-	const STATUS_IN_PROGRESS = 'in progress';
-	const STATUS_DONE = 'done';
+    const STATUS_WAITING = 'waiting';
+    const STATUS_IN_PROGRESS = 'in progress';
+    const STATUS_DONE = 'done';
 
-	protected static $all_status = [
+    protected static $all_status = [
         self::STATUS_WAITING,
         self::STATUS_IN_PROGRESS,
         self::STATUS_DONE,
